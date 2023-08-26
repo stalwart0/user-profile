@@ -1,0 +1,50 @@
+.info{
+    margin: auto;
+    margin-top: 2px;
+    margin-left: 30%;
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    width: 50%;
+    background-color: whitesmoke; 
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+Link{
+    cursor: pointer;
+}
+.picture{
+    margin-left: 2%;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+}
+.name1{
+    margin-left: 2%;
+font-size: larger;
+}
+.card{
+    height: 60vh;
+    margin: auto;
+    /* margin-top: 10em; */
+    border-radius: 0px 0px 20px 20px;
+    width: 50%;
+    background-color: rgb(237, 232, 232);
+    /* align-items: center; */
+    justify-content: center;
+    overflow-y: auto;
+
+}
+.select{
+    display: flex;
+    margin: auto;
+    margin-top: 5em;
+    height: 20vh;
+    align-items:center;
+    justify-content: center;
+    background-color: rgb(67, 104, 104);
+    width: 50%;
+    border-radius: 20px 20px 0px 0px;
+
+}

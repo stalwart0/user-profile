@@ -1,0 +1,53 @@
+.tabs{
+    height: 100vh;
+    background-color: rgb(158, 158, 249);
+    width: 20%;
+    margin: auto;
+    margin-left: 0;
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.side{
+width: 80%;
+}
+.tabItem{
+    /* background-color: red; */
+    font-size: x-large;
+    margin-left: 15%;
+    margin: 0% 0% 10% 10% ;
+}
+.page{
+    display: flex;
+}
+.signOut{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.signInfo{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    position: fixed;
+    right: 2em;
+    top: 0.5em;
+}
+.pic{
+    position: fixed;
+    right: 2em;
+}
+.y{
+    margin: auto;
+    margin-top: 15em;
+    margin-right: 4em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(158, 158, 249);
+}

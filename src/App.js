@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import "../src/Components/Tabs";
+import Tabs from "../src/Components/Tabs";
+import "./App.css";
+import Home from "./Components/Home";
+import RootLayout from "./Components/RootLayout";
 function App() {
+  // const router = createBrowserRouter(
+  //   createRoutesFromElements(
+  //     <Route path="/" element={<RootLayout></RootLayout>}>
+  //       <Route index element={<Home></Home>}></Route>
+  //       <Route path="/profile" element={<Tabs></Tabs>}></Route>
+  //     </Route>
+  //   )
+  // );
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<RootLayout />}>
+          <Route index element={<Home />} />
+          <Route path="profile">
+            <Route path=":userId" element={<Tabs />} />
+            <Route index element={<Navigate to="/" />} />
+          </Route>
+          <Route path="*" element={<Navigate to="/" />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
